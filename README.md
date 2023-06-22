@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # THE WORLD ON A PLATE
 #### Video Demo:  <https://youtu.be/IW8Mf-DMWGg>
 
@@ -172,4 +172,3 @@ To make my application more interactive, I have created a couple of features in 
 =======
 # The_world_on_a_plate
 Web application
->>>>>>> 4d46ac5aece3446a7330d20f7a7090c842ed5fcc
