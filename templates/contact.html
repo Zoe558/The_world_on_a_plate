@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Contact
+{% endblock %}
+
+{% block main %}
+<main>
+  <h3 style="color:grey"><center>If you have any questions left, please contact us</center></h3>
+    <div class="row">
+      <!--Adding map-->
+      <div class="column">
+        <div class="container">
+          <img src="./static/images/map1.png" alt="image" style="float:right">
+        </div>
+      </div>
+
+      <!--Adding contact information-->
+      <div class="column">
+        <div class="container">
+          <p><i class="fa fa-envelope" style="font-size:40px;color:white;"></i> example@gmail.com</p>
+          <p><i class="fa fa-phone" style="font-size:40px;color:blue;"></i> +34-111-111-111</p>
+          <p><i class="fa fa-whatsapp" style="font-size:40px;color:green;"></i> +90-234-222-111</p>
+          <p><i class="fa fa-instagram" style="font-size:40px;color:#E4405F;"></i> +90-234-222-111</p>
+          <p><i class="fa fa-map-marker" style="font-size:40px;color:grey;"></i> 781 Prospect Pl, Brooklyn, NY 11216, United States</p>
+        </div>
+      </div>
+
+      <!--Creating contact form-->
+      <div class="column">
+        <div class="container">
+          <form action="/send-email" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message"></textarea>
+
+            <button type="submit" style="background-color:#1B9263;border: none;color: white;padding: 16px 32px;text-decoration: none;
+            margin: 4px 2px;cursor: pointer">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</main>
+{% endblock %}

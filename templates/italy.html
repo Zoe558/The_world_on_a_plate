@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Italy
+{% endblock %}
+
+{% block main %}
+<!--Adding description about Italy-->
+<main class="Italy">
+  <style>
+    /* Centering the content */
+    #about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Setting width of columns */
+    .w3-col {
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+
+    /* Adding padding to the image */
+    img {
+      padding-right: 20px;
+    }
+
+    /* Styling the heading */
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    /* Styling the subheading */
+    .w3 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    /* Styling the paragraphs */
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+  </style>
+
+  <div class="w3-row" id="about">
+    <div class="w3-col" style="width: 30%">
+      <img src="./static/images/italy1.jpg" alt="image" width="100%">
+      <img src="./static/images/italy3.jpg" alt="image" width="100%" style="margin-top: 20px;">
+    </div>
+
+    <div class="w3-col" style="width: 70%">
+      <h1>Italy<img src="./static/images/flag.jpg" alt="Italian flag" width="100px" style="vertical-align: middle;"></h1>
+      <h5 class="w3">Most popular cuisine of the world</h5>
+      <p class="w3">Mouth-watering Italian Cuisine: A Feast for the Senses
+        When it comes to food, few cuisines can rival the rich and diverse flavors of Italian cuisine. From classic pastas and pizzas to regional specialties like risotto and osso buco, Italian food has something for everyone. Whether you're a fan of meat, seafood, vegetables, or cheese, there's sure to be an Italian dish that will satisfy your cravings.
+        One of the things that makes Italian food so unique is the way it blends fresh, high-quality ingredients with traditional cooking techniques. From the famous San Marzano tomatoes of Naples to the rich truffles of Tuscany, Italian cuisine is rooted in a deep appreciation for the natural flavors of the land.
+        Pasta is perhaps the most iconic of all Italian dishes, with its countless varieties and preparations. From spaghetti carbonara to lasagna, ravioli to linguine alle vongole, each region of Italy has its own take on this beloved staple. And let's not forget about pizza, which has become a worldwide phenomenon with its thin, crispy crust and endless toppings.</p>
+      <p class="w3">But Italian cuisine is much more than just pasta and pizza. Seafood lovers will delight in dishes like fritto misto, a deep-fried seafood platter, or grilled octopus served with lemon and olive oil. Meat lovers can enjoy classics like veal saltimbocca or osso buco, a slow-cooked dish of braised veal shanks. And for those who prefer something on the lighter side, there are plenty of vegetable-based dishes like eggplant parmesan or caponata, a sweet and sour relish made with eggplant, celery, and tomatoes.
+        Of course, no Italian meal would be complete without a glass of wine to accompany it. Italy is home to some of the world's finest vineyards and wineries, producing everything from bold reds like Barolo and Chianti to crisp whites like Pinot Grigio and Soave. And for those who prefer something a little more bubbly, there's always Prosecco or the classic Italian cocktail, the Aperol Spritz.
+        It's no wonder that Italian food has become such a beloved cuisine around the world. From the vibrant colors and flavors to the rich history and tradition, Italian cuisine is a feast for the senses that is sure to leave you feeling satisfied and content. So why not indulge in a plate of fresh pasta or a slice of margherita pizza today? Your taste buds will thank you!</p>
+    </div>
+  </div>
+
+  <!--Meal packages-->
+  <h1><center>Our packages</center></h1>
+  <div class="meal-packages">
+    <div class="meal-package">
+      <h2>Basic Package</h2>
+      <p class="price">$10</p>
+      <ul class="features">
+        <li>&#x2705 3 meals per day</li>
+        <li>&#x2705 7 days per week</li>
+        <li>&#x274C Personalized meal plans</li>
+        <li>&#x274C Consultations with nutritionist</li>
+      </ul>
+      <a href="/form" class="button">Order Now</a>
+    </div>
+
+    <div class="meal-package">
+      <h2>Deluxe Package</h2>
+      <p class="price">$50</p>
+      <ul class="features">
+        <li>&#x2705 3 meals per day</li>
+        <li>&#x2705 1 month every day</li>
+        <li>&#x2705 Personalized meal plans</li>
+        <li>&#x274C Consultations with nutritionist</li>
+        <p> </p>
+      </ul>
+      <a href="/form" class="button">Order Now</a>
+    </div>
+
+    <div class="meal-package">
+      <h2>Super Deluxe Package</h2>
+      <p class="price">$70</p>
+      <ul class="features">
+        <li>&#x2705 5 meals per day</li>
+        <li>&#x2705 1 month every day</li>
+        <li>&#x2705 Personalized meal plans</li>
+        <li>&#x2705 Consultations with nutritionist</li>
+      </ul>
+      <a href="/form" class="button">Order Now</a>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

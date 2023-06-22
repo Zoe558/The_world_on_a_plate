@@ -1,0 +1,631 @@
+header{
+    color:#1B9263;
+    font-size: 130%;
+    padding: 10px;
+    font-family:fantasy;
+  }
+  
+  .hero {
+    position: relative;
+    height: 100vh; /* Adjust the height as needed */
+  }
+  
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/hero7.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9; 
+  }
+
+  .hero-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the alpha value to control the opacity */
+  }  
+  
+  .hero-content {
+    position: relative;
+    text-align: center;
+    color: #f0eeee; /* Adjust the text color as desired */
+    padding: 150px; /* Adjust the padding as needed */
+  }
+  
+  .hero-title {
+    font-size: 40px; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-introduction {
+    margin-bottom: 40px;
+  }
+  
+  .hero-button {
+    padding: 10px 20px; /* Adjust the button padding as needed */
+    margin-top: 20px;
+    font-size: 16px; /* Adjust the button font size as desired */
+    background-color: #ff9800; /* Adjust the button background color as desired */
+    color: #fff; /* Adjust the button text color as desired */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .carousel-item img {
+    width: 290px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    border-radius: 20%; /* Creates rounded borders */
+    margin: 10px; /* Adds spacing between images */
+    object-fit: cover; /* Preserve aspect ratio and fill the container */
+  }
+  
+  
+  
+introduction {
+    position:relative;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 100%;
+    padding: 50px;
+    font-family:"Frank Ruhl Libre",Georgia,serif;
+    color: black;
+    width: 50%;
+    padding: 20px;
+  }
+
+  #more {display: none;}
+
+  .myBtn{
+    color: black;
+    background:none;
+    border:none;
+    font-family:"Frank Ruhl Libre",Georgia,serif;
+    font-size: 100%;
+  }
+  
+  .myBtn:hover{
+    border-bottom: 3px solid black;
+  }
+  
+  /* youtube video*/
+  .video{
+    position: absolute;
+    bottom: 200px;
+    left: 30px;
+  }
+  
+  /*map description*/
+  .map1{
+    text-align: center;
+    font-size: 100%;
+    padding: 50px;
+    font-family:"Frank Ruhl Libre",Georgia,serif;
+  }
+  
+  
+  /* map */
+  *{
+      margin:0;
+      padding:0;
+  }
+  
+  svg path{
+      fill: #1B9263;
+      stroke: #eeee;
+  }
+  
+  svg path:hover{
+      fill: #3BEC2C;
+      transition: 0.6s;
+      cursor:pointer
+  }
+  
+  
+  /* Newsletter */
+  .letter{
+    width:95%;
+  }
+  
+  /* Navbar */
+  nav .navbar-brand
+  {
+      font-size: xx-large;
+  }
+  
+  .navbar-nav input[type=text] {
+    height: 70%;
+    width: 100%;
+    float: right;
+    padding: 20px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 550px;
+    font-size: 18px;
+    border-radius: 12px;
+  }
+  
+  /* Our team */
+  .column {
+      float: left;
+      width: 33%;
+      margin-bottom: 16px;
+      padding: 0 7px;
+    }
+  
+    /* Display the columns below each other instead of side by side on small screens */
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+  
+    /* Add some shadows to create a card effect */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+  
+    /* Some left and right padding inside the container */
+    .container {
+      padding: 0 16px;
+    }
+  
+    /* Clear floats */
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  
+    .title {
+      color: grey;
+    }
+  
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+  
+    .button:hover {
+      background-color: #555;
+    }
+  
+  /* Contact form */
+  input {
+    width: 50%;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+  }
+  
+  
+  input[type=button], input[type=submit] {
+    background-color: #1B9263;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .italy{
+    font-family:"Frank Ruhl Libre",Georgia,serif;
+  }
+  .w3-col{
+    padding:6px;
+  }
+  
+  
+  /*Packages*/
+  .meal-packages {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .meal-package {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  }
+  
+  .meal-package h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .meal-package .price {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+  
+  .meal-package .features {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+  }
+  
+  .meal-package .features li {
+    margin-bottom: 10px;
+  }
+  
+  .meal-package .button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #1B9263;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .meal-package .button:hover {
+    background-color: #0069d9;
+  }
+  
+  /*Gallery*/
+  .column1 {
+    float: left;
+    width: 24.5%;
+    margin-bottom: 16px;
+    padding: 0 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  /* Some left and right padding inside the container */
+  .column1 {
+    padding: 0px 0px;
+    position: relative;
+    text-align: bottom-left;
+    color:white;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 80px;
+    font-family:"Frank Ruhl Libre",Georgia,serif;
+    font-size: 210%;
+    text-shadow: 2px 2px grey;
+  }
+  
+  .bottom-left:hover {
+    text-shadow: none;
+    font-size: 240%;
+  }
+  
+  /*form*/
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  body1 {
+    padding: 1em;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #b9b9b9;
+    background-color: #e3e3e3;
+  }
+  
+  input,
+  input[type="radio"] + label,
+  input[type="checkbox"] + label:before,
+  select option,
+  select {
+    width: 100%;
+    padding: 1em;
+    line-height: 1.4;
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    -webkit-transition: 0.35s ease-in-out;
+    -moz-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+  }
+  input:focus {
+    outline: 0;
+    border-color: #1B9263;
+  }
+  input:focus + .input-icon i {
+    color: #1B9263;
+  }
+  input:focus + .input-icon:after {
+    border-right-color: #1B9263;
+  }
+  input[type="radio"] {
+    display: none;
+  }
+  input[type="radio"] + label,
+  select {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    border-radius: 0;
+  }
+  input[type="radio"] + label:first-of-type {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  input[type="radio"] + label:last-of-type {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  input[type="radio"] + label i {
+    padding-right: 0.4em;
+  }
+  input[type="radio"]:checked + label,
+  input:checked + label:before,
+  select:focus,
+  select:active {
+    background-color: #1B9263;
+    color: #fff;
+    border-color: #1B9263;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="checkbox"] + label {
+    position: relative;
+    display: block;
+    padding-left: 1.6em;
+  }
+  input[type="checkbox"] + label:before {
+    position: absolute;
+    top: 0.2em;
+    left: 0;
+    display: block;
+    width: 1em;
+    height: 1em;
+    padding: 0;
+    content: "";
+  }
+  input[type="checkbox"] + label:after {
+    position: absolute;
+    top: 0.45em;
+    left: 0.2em;
+    font-size: 0.8em;
+    color: #fff;
+    opacity: 0;
+    font-family: FontAwesome;
+    content: "\f00c";
+  }
+  input:checked + label:after {
+    opacity: 1;
+  }
+  select {
+    height: 3.4em;
+    line-height: 2;
+  }
+  select:first-of-type {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  select:last-of-type {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  select:focus,
+  select:active {
+    outline: 0;
+  }
+  select option {
+    background-color: #1B9263;
+    color: #fff;
+  }
+  .input-group {
+    margin-bottom: 1em;
+    zoom: 1;
+  }
+  .input-group:before,
+  .input-group:after {
+    content: "";
+    display: table;
+  }
+  .input-group:after {
+    clear: both;
+  }
+  .input-group-icon {
+    position: relative;
+  }
+  .input-group-icon input {
+    padding-left: 4.4em;
+  }
+  .input-group-icon .input-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.4em;
+    height: 3.4em;
+    line-height: 3.4em;
+    text-align: center;
+    pointer-events: none;
+  }
+  .input-group-icon .input-icon:after {
+    position: absolute;
+    top: 0.6em;
+    bottom: 0.6em;
+    left: 3.4em;
+    display: block;
+    border-right: 1px solid #e5e5e5;
+    content: "";
+    -webkit-transition: 0.35s ease-in-out;
+    -moz-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+  }
+  .input-group-icon .input-icon i {
+    -webkit-transition: 0.35s ease-in-out;
+    -moz-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+  }
+  .container2 {
+    max-width: 38em;
+    padding: 1em 3em 2em 3em;
+    margin: 0em auto;
+    background-color: #fff;
+    border-radius: 4.2px;
+    box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+  }
+  .row2 {
+    zoom: 1;
+  }
+  .row2:before,
+  .row2:after {
+    content: "";
+    display: table;
+  }
+  .row2:after {
+    clear: both;
+  }
+  .col-half {
+    padding-right: 10px;
+    float: left;
+    width: 50%;
+  }
+  .col-half:last-of-type {
+    padding-right: 0;
+  }
+  .col-third {
+    padding-right: 10px;
+    float: left;
+    width: 33.33333333%;
+  }
+  .col-third:last-of-type {
+    padding-right: 0;
+  }
+  @media only screen and (max-width: 540px) {
+    .col-half {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+  
+  /* Meal plan example */
+  
+  .body3 {
+    margin: 0;
+  }
+  
+  /* Container holding the image and the text */
+  .container1 {
+    position: relative;
+    font-family:"Georgia", serif;
+  }
+  
+  .notebook {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%; /* Adjust this value to position the text vertically */
+    left: 50%; /* Adjust this value to position the text horizontally */
+    transform: translate(-50%, -50%); /* Center the text within its container */
+    width: 100%; /* Adjust this value to control the width of the text */
+    max-width: 800px; /* Adjust this value to control the maximum width of the text */
+    padding: 2px;
+    box-sizing: border-box;
+  }
+  .meal-plan h3,
+  .meal-plan p{
+    font-size: 14px;
+  }
+  
+  
+  .ingredients{
+    font-size: 14px;
+  }
+  
+  
+  /* Optional styles to enhance the appearance of the text */
+  .text-overlay h2 {
+    margin-top: 0;
+  }
+  
+  .text-overlay p {
+    margin-bottom: 0;
+    width: 190%;
+  }
+  
+  .text-overlay ul {
+    margin-top: 0;
+    padding-left: 20px;
+  }
+  
+  .meal-image{
+    width:80%;
+  }
+  
+  .h2{
+    position:center;
+  }
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .meal {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .meal img {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+  
