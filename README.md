@@ -1,6 +1,7 @@
-"The World on a Plate" is a web application developed as the final project for the CS50 Introduction to Computer Science course. It allows users to explore and purchase meal plans from different countries, bringing together the joy of traveling and cooking. The application features an interactive map, photo gallery, and country-specific pages where users can order meal plans. It incorporates technologies such as Python, HTML, CSS, and JavaScript to create an immersive and user-friendly experience.
-
 # THE WORLD ON A PLATE
+
+Short Description: A web application that allows users to explore and purchase meal plans from different countries, combining the joy of traveling and cooking.
+
 #### Video Demo:  <https://youtu.be/IW8Mf-DMWGg>
 
 #### Table of Contents
