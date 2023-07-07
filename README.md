@@ -1,6 +1,6 @@
 # THE WORLD ON A PLATE
 
-Short Description: A web application that allows users to explore and purchase meal plans from different countries, combining the joy of traveling and cooking.
+A web application that allows users to explore and purchase meal plans from different countries, combining the joy of traveling and cooking.
 
 #### Video Demo:  <https://youtu.be/IW8Mf-DMWGg>
 
